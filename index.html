@@ -30,8 +30,8 @@
             var requestOptions = { method: "POST", headers: myHeaders, body: raw, redirect: 'follow' };
             fetch("https://ofny6umxai.execute-api.us-east-2.amazonaws.com/dev", requestOptions)
                 .then(response => response.text())
-                .then(result => alert(JSON.parse(result).body)
-                    .catch(error => console.log('error', error));
+                .then(result => alert(JSON.parse(result).body))
+                .catch(error => console.log('error', error));
         }
     </script>
     <title>Hello World</title>
