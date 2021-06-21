@@ -23,7 +23,7 @@
             margin-left: 20px;
         }
     </style>
-    <script>var callAPI = (firstName lastName) => {
+    <script>var callAPI = (firstName, lastName) => {
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
             var raw = JSON.stringify({ "firstName": firstName, "lastName": lastName });
